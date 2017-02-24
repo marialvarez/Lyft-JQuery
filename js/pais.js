@@ -3,11 +3,14 @@ var inputNumber = $("#number");
 function init() {
     
     var imgFlag = $("#peruFlag");
+    var codeNumber = $("#codeNumber");
     var select = localStorage.getItem('country_select'); 
+    var country_code = paises[select].phone_code;
     var country_url = paises[select].imageURL;
     
     //.prop()
     imgFlag.attr("src", country_url);
+    codeNumber.text(country_code);
     
     var button = $("#next");
     button.click(onButtonClick);

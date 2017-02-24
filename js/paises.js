@@ -40,16 +40,11 @@ $(document).ready(function () {
                     }).show();
  
                 })
- 
             }(jQuery));
 });
 
-
-
-
-
-/*
 // ----------------------------------------------- BUSCADOR
+/*
 var search = $("#search");
 var ulListCountries = $("#list-countries");
 
