@@ -349,7 +349,7 @@ var paises= [
     "iso3": "CAN",
     "phone_code": 1,
     "imageURL": "image/ca.png"
-  },
+  } /*,
   {
     "nombre": "Chad",
     "name": "Chad",
@@ -772,7 +772,7 @@ var paises= [
     "iso3": "GNQ",
     "phone_code": 240,
     "imageURL": "image/gq.png"
-  }/*,
+  },
   {
     "nombre": "Guinea-Bissau",
     "name": "Guinea-Bissau",
