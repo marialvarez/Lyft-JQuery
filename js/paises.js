@@ -12,6 +12,7 @@ function init(){
 
 function createList() {
     var elListCountries = $("#list-countries");
+    
     for(var i in paises){
         var listHtml= 
             '<li id="' + i + '">'+
@@ -30,7 +31,6 @@ function onCountryClick(evt) {
 $(document).ready(function () {
  
             (function ($) {
- 
                 $('#search').keyup(function () {
  
                     var rex = new RegExp($(this).val(), 'i');
@@ -38,7 +38,6 @@ $(document).ready(function () {
                     $('li').filter(function () {
                         return rex.test($(this).text());
                     }).show();
- 
                 })
             }(jQuery));
 });

@@ -1,14 +1,13 @@
 var nombre = $("#name");
 var emailX = $("#email");
 var checkInput = $("#check"); 
-var mensajeCheck = $("#mensajeCheck");
 
 function init(){
     var button = $("#next");
     button.click(onButtonClick);
     nombre.val("");
     emailX.val("");
-    checkInput.prop( "checked" );
+    checkInput.prop( "checked",false );
 }
 
 function onButtonClick() {
@@ -17,12 +16,12 @@ function onButtonClick() {
     var inputEmail = $("#email");
     localStorage.setItem('Email', inputEmail.val());
     
-    if(nombre.val() == '' || emailX.val() == '' || checkInput.checked == false) {
+    if(nombre.val() == '' || emailX.val() == '' || checkInput.prop("checked",false)) {
         
-        mensajeCheck.html("<br><h5 class='text-center' style='color:#FF1493';>Debe completar todo el formulario</h5>");
+        swal("Formulario incompleto", "Debes completar todo el formulario", "warning");
+
     } else {
-        
-        mensajeCheck.html("");
+        //onCheck();
         location.href = 'mapa.html';
     }
 }
@@ -83,10 +82,10 @@ function convertirMayus(texto){
     
     return mayuscula;
 }
-    
+
 function onCheck(){   
     
-    if(checkInput.checked){
+    if(checkInput.prop("checked", true)){
         return true;
     } else {
         return false;

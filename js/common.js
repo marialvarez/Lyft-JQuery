@@ -81,15 +81,6 @@ var paises= [
     "imageURL": "image/ag.png"
   },
   {
-    "nombre": "Antillas Neerlandesas",
-    "name": "Netherlands Antilles",
-    "nom": "Antilles Néerlandaises",
-    "iso2": "AN",
-    "iso3": "ANT",
-    "phone_code": 599,
-    "imageURL": "image/an.png"
-  },
-  {
     "nombre": "Arabia Saudita",
     "name": "Saudi Arabia",
     "nom": "Arabie Saoudite",
@@ -349,7 +340,7 @@ var paises= [
     "iso3": "CAN",
     "phone_code": 1,
     "imageURL": "image/ca.png"
-  } /*,
+  } ,
   {
     "nombre": "Chad",
     "name": "Chad",
@@ -2212,5 +2203,5 @@ var paises= [
     "iso3": "ZWE",
     "phone_code": 263,
     "imageURL": "image/zw.png"
-  }*/
+  }
 ]
