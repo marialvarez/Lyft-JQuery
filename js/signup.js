@@ -7,7 +7,7 @@ function init(){
     button.click(onButtonClick);
     nombre.val("");
     emailX.val("");
-    checkInput.prop( "checked",false );
+    checkInput.prop("checked",false);
 }
 
 function onButtonClick() {
@@ -16,12 +16,12 @@ function onButtonClick() {
     var inputEmail = $("#email");
     localStorage.setItem('Email', inputEmail.val());
     
-    if(nombre.val() == '' || emailX.val() == '' || checkInput.prop("checked",false)) {
+    if(nombre.val() == '' || emailX.val() == '' || !onCheck()) {
         
         swal("Formulario incompleto", "Debes completar todo el formulario", "warning");
 
     } else {
-        //onCheck();
+        onCheck();
         location.href = 'mapa.html';
     }
 }
@@ -85,7 +85,7 @@ function convertirMayus(texto){
 
 function onCheck(){   
     
-    if(checkInput.prop("checked", true)){
+    if(checkInput.prop("checked")){
         return true;
     } else {
         return false;
